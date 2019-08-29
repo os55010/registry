@@ -11,6 +11,6 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Recycle
   nfs:
-    server: 192.168.1.3
-    path: /USBDisk1/registry
+    server: {{ nfs_server_address }}
+    path: {{ nfs_path }}
 
